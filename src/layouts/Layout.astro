@@ -1,4 +1,3 @@
-
 <!-- --/><!doctype html> -->
 <html lang="en">
 	<head>
@@ -6,18 +5,19 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>konlomio</title>
 	</head>
 	<body>
+		<header>
+			<nav>
+			<a href="/">inicio</a>
+			<a href="/about-us">sobre nosotros</a>
+			<a href="/shop">tienda</a>
+			<a href="/collections">colecciones</a>
+		</nav>
+		</header>
+
 		<slot />
+		
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
