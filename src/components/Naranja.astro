@@ -1,15 +1,27 @@
 ---
 import { Icon } from "astro-icon/components";
+import { imageConfig } from "astro:assets";
+
+interface Props {
+    title: string
+    price: number
+    img: string
+}
+
+    
+const title = Astro.props.title
+const dolitas = Astro.props.price
+const foto = Astro.props.img
 ---
 
 <div>
-    <img src="" alt="">
+    <img src={foto} alt="">
     </div>
-         <p></p>
-         <Icon name={""}/>
+         <p>{title}l</p>
+         <Icon name={"like"}/>
       <div>
       </div>
-           <p></p>
-           <p></p>
+           <p>${dolitas}</p>
+           <p>envio gratis</p>
         <div>
     </div>
