@@ -7,7 +7,7 @@ import { Icon } from 'astro-icon/components'
     <nav>
         <ul>
            </li>
-                <Icon name={"lupa"} ></Icon>
+                <Icon name={"lupa"} width={36} height={36} ></Icon>
              </li>
             <li><a href="/">home</a></li>
             <li><a href="/shop">shop</a></li>
@@ -17,7 +17,7 @@ import { Icon } from 'astro-icon/components'
             <li><a href="/about-us">about-us</a></li>
             <li><a href="/contact">contactanos</a></li>
             <li>
-                <Icon name={"COMPRA"} ></Icon>
+                <Icon name={"COMPRA"} width={36} height={36}></Icon>
             </li>
         </ul>
     </nav>
@@ -26,8 +26,25 @@ import { Icon } from 'astro-icon/components'
 
 
 <style>
-    ul {
-        display: flex;
-        gap: 16px;
+   img {
+    width: 150px;
+    font-size: 24px;
+    font-weight: 700;
+
+   }
+   nav {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 50px;
+     padding: 10px 60px;
+     background-color: #ff2600
+    }
+   ul {
+     display: flex;
+     gap: 16px;
+     font-weight: 700;
+     align-items: center;
+     background-color: #e17705;
     }
 </style>
