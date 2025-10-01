@@ -5,9 +5,20 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
-    <Naranja title="hulk" price={15}img="/hulk.png" />
-    <Naranja title=" spiderman" price={10}img="/spiderman.png"  />
-    <Naranja title="capitan america" price={25}img="/capitanamerica.png"  />
-    <Naranja title="thanos" price={30}img="/thanos.png"  />
-    <Naranja title=" cara de loco" price={15}img="/caradeloco.png"  />
+    <div>
+        <Naranja title="hulk" price={15}img="/hulk.png" />
+        <Naranja title=" spiderman" price={10}img="/spiderman.png"  />
+        <Naranja title="capitan america" price={25}img="/capitanamerica.png"  />
+        <Naranja title="thanos" price={30}img="/thanos.png"  />
+        <Naranja title=" cara de loco" price={15}img="/caradeloco.png"  />
+
+    </div>
 </Layout>
+
+
+<style>
+    div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+</style>
