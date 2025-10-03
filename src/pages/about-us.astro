@@ -1,39 +1,59 @@
 ---
-import Layout from "../layouts/Layout.astro"
-
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div>
-    <h1>Sobre Nosotros</h1>
-    <p>Bienvenido a nuestra tienda en línea. Nos especializamos en ofrecer productos de alta calidad a precios competitivos. Nuestro objetivo es brindar una experiencia de compra excepcional a nuestros clientes.</p>
-    <p>Fundada en 2025, nuestra empresa ha crecido rápidamente gracias a nuestro compromiso con la satisfacción del cliente y la calidad de nuestros productos. Nos enorgullece ofrecer una amplia gama de artículos que se adaptan a las necesidades y gustos de nuestros clientes.</p>
-    <p>Nos esforzamos por mantenernos actualizados con las últimas tendencias del mercado y trabajamos directamente con proveedores confiables para garantizar que cada producto que ofrecemos cumpla con nuestros altos estándares.</p>
-    <p>Gracias por elegirnos como su tienda en línea de confianza. Estamos aquí para ayudarle en cada paso del camino y esperamos que disfrute de su experiencia de compra con nosotros.</p>
-     <img src="/sobrenosotros.png" alt="">
-</div>
+  <div class="about-us-container">
+    <div>
+      <h1>Sobre Nosotros</h1>
+      <p>
+        Bienvenido a nuestra tienda en línea. Nos especializamos en ofrecer
+        productos de alta calidad a precios competitivos. Nuestro objetivo es
+        brindar una experiencia de compra excepcional a nuestros clientes.
+      </p>
+      <p>
+        Fundada en 2025, nuestra empresa ha crecido rápidamente gracias a
+        nuestro compromiso con la satisfacción del cliente y la calidad de
+        nuestros productos. Nos enorgullece ofrecer una amplia gama de artículos
+        que se adaptan a las necesidades y gustos de nuestros clientes.
+      </p>
+      <p>
+        Nos esforzamos por mantenernos actualizados con las últimas tendencias
+        del mercado y trabajamos directamente con proveedores confiables para
+        garantizar que cada producto que ofrecemos cumpla con nuestros altos
+        estándares.
+      </p>
+      <p>
+        Gracias por elegirnos como su tienda en línea de confianza. Estamos aquí
+        para ayudarle en cada paso del camino y esperamos que disfrute de su
+        experiencia de compra con nosotros.
+      </p>
+    </div>
+    <img src="sobrenosotros.png" alt="" />
+  </div>
 </Layout>
 
 <style>
-  img {
-    width: 400px;
-    display: block;
-    margin: 0 auto;
-    padding: 20px 0;
-  }
-  nav {
+  .about-us-container {
     display: flex;
-    justify-content: center;
-    align-items: left;
-    gap: 50px;
-    padding: 10px 60px;
-    background-color: #ff2600
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
   }
-   ul {
-    display: flex;
-    gap: 16px;
-    font-weight: 300;
-    align-items: left;
-    
-   }
+
+  .about-us-container img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .about-us-container div {
+    max-width: 800px;
+    text-align: justify;
+  }
+
+  .about-us-container h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 </style>
