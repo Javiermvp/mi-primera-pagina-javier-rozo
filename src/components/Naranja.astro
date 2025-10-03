@@ -15,7 +15,7 @@ const foto = Astro.props.img;
 
 <div>
     <img src={foto} alt="" />
-    <p>{title}l</p>
+    <p>{title}</p>
     <div>
         <Icon name={"like"} />
         <div>
@@ -29,9 +29,9 @@ const foto = Astro.props.img;
 <style>
 
     img {
-        width: 300px;
+        width: 100%;
         height: 300px;
-        object-fit: cover;
+        object-fit: contain;
     }
     button {
         background-color: rgb(221, 104, 15);
