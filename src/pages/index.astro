@@ -4,48 +4,10 @@ import HeroSection from "../components/HeroSection.astro";
 ---
 
 <Layout>
-
-<!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide"><HeroSection /></div>
-    <div class="swiper-slide"><HeroSection /></div>
-    <div class="swiper-slide"><HeroSection /></div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
+<HeroSection />
 
 
-   <h1>Lleva Tu Pasion, Con Estilo </h1>
-   <p>Elige Tu Coleccion</p>
-   <HeroSection /> 
+
 </Layout>
 
 
-<script>
-
-// core version + navigation, pagination modules:
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-// init Swiper:
-const swiper = new Swiper('.swiper', {
-  // configure Swiper to use modules
-  modules: [Navigation, Pagination],
-});
-</script>
