@@ -1,20 +1,44 @@
+<!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="/anime.png" alt="" /></div>
+        <div class="swiper-slide"><img src="/marvel.png" alt="" /></div>
+        <div class="swiper-slide"><img src="/videogame.png" alt="" /></div>
+        <div class="swiper-slide">
+            <img src="/sportcollection.png" alt="" />
+        </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
 
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 
-
-
-<div>
-    <img src="/anime.png" alt="" />
-    <img src="/marvel.png" alt="" />
-    <img src="/videogame.png" alt="" />
-    <img src="/sportcollection.png" alt="">
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
 </div>
 
+<script>
+    // core version + navigation, pagination modules:
+    import Swiper from "swiper";
+    import { Autoplay, Navigation, Pagination } from "swiper/modules";
+    // import Swiper and modules styles
+    import "swiper/css";
+    import "swiper/css/navigation";
+    import "swiper/css/pagination";
 
-<style>
-    div {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    }
-
-    
-</style>
+    // init Swiper:
+    const swiper = new Swiper(".swiper", {
+        // configure Swiper to use modules
+        modules: [Navigation, Pagination , Autoplay],
+        autoplay: {
+            delay: 3000,
+            
+        },
+        loop: true,
+        slidesPerView: 3,
+    });
+</script>

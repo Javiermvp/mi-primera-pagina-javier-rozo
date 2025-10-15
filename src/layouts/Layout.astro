@@ -1,5 +1,6 @@
 ---
 import Menu from "../components/Menu.astro"
+import Footer from "../components/footer.astro"
 import '../styles/global.css'
 ---
 
@@ -24,3 +25,19 @@ import '../styles/global.css'
 		Derechos De Autor © 2025 Javier Rozo. Todos Los Derechos Reservados.
 	</body>
 </html>
+
+
+<script>
+import Lenis from 'lenis'
+
+// Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+// Listen for the scroll event and log the event data
+lenis.on('scroll', (e) => {
+  console.log(e);
+});
+
+</script>
